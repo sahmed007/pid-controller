@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-labelledby="title desc">
+<title id="title">Rotor torque balance</title><desc id="desc">A rotor with inertia J receives clockwise motor torque tau sub m. The combined opposing torque b omega plus tau sub load is counterclockwise, for positive clockwise rotation and positive load.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#f1e9e9"/></marker>
+<marker id="accent-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#b77979"/></marker>
+</defs>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:22px;fill:#f1e9e9}
+.line{fill:none;stroke:#f1e9e9;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.accent{fill:none;stroke:#b77979;stroke-width:2.5;stroke-linecap:round}
+.sub{font-size:15px;baseline-shift:sub}
+.label{font-size:17px;fill:#c9cbd0}
+.symbol{font-family:Georgia,serif;font-style:italic}
+</style>
+<rect width="800" height="400" fill="#25272b"/>
+
+<circle cx="400" cy="210" r="75" class="line"/><circle cx="400" cy="210" r="12" class="line"/>
+<text x="400" y="178" text-anchor="middle" class="symbol">J</text>
+<path d="M300 270A115 115 0 0 1 315 130" class="accent" marker-end="url(#accent-arrow)"/>
+<path d="M500 270A115 115 0 0 0 485 130" class="line" marker-end="url(#arrow)"/>
+<text x="235" y="213" text-anchor="end" class="symbol" style="fill:#b77979">τ<tspan class="sub">m</tspan></text>
+<text x="565" y="213" class="symbol">bω + τ<tspan class="sub">load</tspan></text>
+
+<text x="400" y="111" text-anchor="middle" class="label">Rotor inertia</text>
+<text x="235" y="249" text-anchor="end" class="label">Motor torque</text>
+<text x="565" y="249" class="label">Friction + load</text>
+<text x="400" y="345" text-anchor="middle" class="label">Positive rotation: clockwise</text>
+</svg>
