@@ -120,16 +120,3 @@ pid-controller/
 NumPy will handle simulation data, SciPy will support numerical integration and
 analysis, and Matplotlib will plot the results. Jupyter Notebook provides the notebook interface, and ipykernel runs notebook code
 in the project's Python environment.
-
-## Tutorial validation
-
-Run the reference solutions in fresh kernels and check the numerical model,
-controller behavior, exercise structure, and local links:
-
-```sh
-uv run python scripts/validate_tutorial.py
-```
-
-The validator uses temporary notebooks and leaves your exercise code and saved
-outputs untouched. See [the technical review](REVIEW.md) for findings, fixes,
-and the limits of these checks.
